@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>modal-dialog-2</title>
+        <meta name="description" content="modal-dialog-2">
+        <meta name="author" content="Yusuke">
+        <meta property="og:url" content="http://example.com/index.html">
+        <meta property="og:type" content="website">
+        <meta property="og:tytle" content="daytra2nd-card-home">
+        <meta property="og:image" content="http://example.com/images/ogp.jpg">
+        <!-- favicon -->
+        <!-- <link rel="icon" href="images/daytra-fabicon.ico"> -->
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="css/modal-dialog-2.css" rel="stylesheet">
+        <!-- Google-fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet"><!-- 'Noto Sans' -->
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal01">クリックでモーダル1を表示</a><br>
+            <a class="js-modal-open" href="" data-target="modal02">クリックでモーダル2を表示</a>
+        </div>
+        <div id="modal01" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <p>1つ目モーダルウィンドウです。ここにモーダルウィンドウで表示したいコンテンツを入れます。モーダルウィンドウを閉じる場合は下の「閉じる」をクリックするか、背景の黒い部分をクリックしても閉じることができます。</p>
+                <a class="js-modal-close" href="">閉じる</a>
+            </div><!--modal__inner-->
+        </div><!--modal-->
+        <div id="modal02" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <p>2つ目モーダルウィンドウです。ここにモーダルウィンドウで表示したいコンテンツを入れます。モーダルウィンドウを閉じる場合は下の「閉じる」をクリックするか、背景の黒い部分をクリックしても閉じることができます。</p>
+                <a class="js-modal-close" href="">閉じる</a>
+            </div><!--modal__inner-->
+        </div><!--modal-->
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="js/modal-dialog-2.js"></script>
+    </body>
+</html>
